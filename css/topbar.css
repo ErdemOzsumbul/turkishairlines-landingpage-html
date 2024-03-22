@@ -1,0 +1,34 @@
+.topbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.topbar-top-item {
+  border-left: 1px dashed #ccc;
+  padding: 0 0.75rem;
+}
+.topbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border-right: 1px dashed #ccc;
+  height: max-content;
+}
+
+.topbar-sign-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
