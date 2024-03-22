@@ -1,0 +1,33 @@
+.deals-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.deals-offer {
+  width: 100%;
+  font-size: 1.85rem;
+  font-weight: 200;
+}
+
+.deals-offer span {
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: #e81932;
+}
+
+.deals-special {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-top: 2rem;
+}
+
+.deals-more {
+  color: #e81932;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+}

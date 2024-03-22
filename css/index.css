@@ -1,0 +1,31 @@
+.vertical-line {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden scroll;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-bottom: 3rem;
+  margin-top: -10rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    margin-top: -4rem;
+  }
+}

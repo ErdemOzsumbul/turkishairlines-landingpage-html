@@ -2,12 +2,51 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  position: relative;
+}
+
+.topbar-top {
+  display: flex;
+  justify-content: flex-end;
+  background: #2b3947;
+  color: #ccc;
+  padding: 0.5rem;
+  font-size: 0.75rem;
 }
 
 .topbar-top-item {
   border-left: 1px dashed #ccc;
   padding: 0 0.75rem;
 }
+
+.topbar-secondary {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: rgb(35, 43, 56);
+  color: white;
+}
+
+.topbar-secondary-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topbar-secondary-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.topbar-logo {
+  display: block;
+}
+
+.topbar-logo-small {
+  display: none;
+}
+
 .topbar-nav {
   display: flex;
   align-items: center;
@@ -31,4 +70,73 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.topbar-sign-up {
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.topbar-sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  padding: 0.5rem 1.75rem;
+  font-size: 0.75rem;
+}
+
+.topbar-sign-in-txt {
+  display: block;
+}
+
+.topbar-sign-in-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .topbar-logo {
+    display: none;
+  }
+
+  .topbar-logo-small {
+    display: block;
+  }
+  .topbar-sign-in {
+    border: none;
+    padding: 0.75rem;
+  }
+  .topbar-sign-in-txt {
+    display: none;
+  }
+
+  .topbar-sign-in-icon {
+    display: block;
+  }
+  .topbar-nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    background: #232b38;
+    flex-direction: column;
+    align-items: normal;
+    padding: 0 2rem;
+    gap: 1rem;
+  }
+  .topbar-nav-item {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 0;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .topbar-nav.active {
+    display: block;
+  }
 }

@@ -1,0 +1,28 @@
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
+  width: 100%;
+}
+
+.search-head {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+}
+
+.search-step {
+  padding: 0.5rem 1rem;
+  background: #fff;
+}
+
+.search-body {
+  height: 300px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
