@@ -23,37 +23,64 @@
     <link rel="stylesheet" href="css/sponsorships.css" />
     <link rel="stylesheet" href="css/deals.css" />
     <link rel="stylesheet" href="css/explore.css" />
+    <link rel="stylesheet" href="css/sliderContent.css" />
 
     <title>Turkish Airlines</title>
   </head>
   <body>
+    <div class="contactUs">Contact Us</div>
     <div class="wrapper">
       <div class="topbar-wrapper">
-        <div class="topbar-top">
-          <div class="topbar-top-item">Corporate Club</div>
-          <div class="topbar-top-item">Mile&amp;Smiles</div>
-          <div class="topbar-top-item">Search</div>
-          <div class="topbar-top-item">EN-INT</div>
-        </div>
-        <div class="topbar-secondary">
-          <div class="topbar-secondary-left">
-            <img src="/logo/logo.webp" alt="logo" height="40px" class="topbar-logo"/>
-            <img src="/logo/logo-small.png" alt="logo" height="40px"class="topbar-logo-small" />
-            <div class="topbar-secondary-txt">icon</div>
+        <div class="topvar-container">
+          <div class="topbar-top">
+            <div class="topbar-top-item">Corporate Club</div>
+            <div class="topbar-top-item">Mile&amp;Smiles</div>
+            <div class="topbar-top-item">Search</div>
+            <div class="topbar-top-item">EN-INT</div>
           </div>
-          <div class="topbar-secondary-right">
-            <div class="topbar-nav">
-              <div class="topbar-nav-item">PLAN&amp;BOOK</div>
-              <div class="topbar-nav-item">FLY Differen</div>
-              <div class="topbar-nav-item">Discover</div>
-              <div class="topbar-nav-item">Miles&amp;SMILES</div>
-              <div class="topbar-nav-item">HELP</div>
+          <div class="topbar-secondary">
+            <div class="topbar-secondary-left">
+              <a href="/">
+                <img
+                  src="/logo/logo.webp"
+                  alt="logo"
+                  height="40px"
+                  class="topbar-logo"
+                />
+                <img
+                  src="/logo/logo-small.png"
+                  alt="logo"
+                  height="40px"
+                  class="topbar-logo-small"
+                />
+              </a>
+              <div id="menu" class="topbar-secondary-txt">
+                <img
+                  src="/icon/menu.svg"
+                  alt="logo"
+                  height="40px"
+                  class="topbar-logo-small"
+                />
+              </div>
             </div>
-            <div class="topbar-sign-btns">
-              <div class="topbar-sign-up">Sign up</div>
-              <div class="topbar-sign-in">
-                <div class="topbar-sign-in-txt">SIGN IN</div>
-                <img src="/icon/account.svg" alt="account" class="topbar-sign-in-icon"/>
+            <div class="topbar-secondary-right">
+              <div class="topbar-nav" id="nav">
+                <div class="topbar-nav-item">PLAN&amp;BOOK</div>
+                <div class="topbar-nav-item">FLY Different</div>
+                <div class="topbar-nav-item">Discover</div>
+                <div class="topbar-nav-item">Miles&amp;SMILES</div>
+                <div class="topbar-nav-item">HELP</div>
+              </div>
+              <div class="topbar-sign-btns">
+                <div class="topbar-sign-up">Sign up</div>
+                <div class="topbar-sign-in">
+                  <div class="topbar-sign-in-txt">SIGN IN</div>
+                  <img
+                    src="/icon/account.svg"
+                    alt="account"
+                    class="topbar-sign-in-icon"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -74,7 +101,262 @@
               <div class="search-step">Check-in / Manage booking</div>
               <div class="search-step">Flight status</div>
             </div>
-            <div class="search-body"></div>
+            <div class="search-body">
+              <div class="search-body-top">
+                <div class="search-body-radio-group">
+                  <div style="cursor: pointer">
+                    <input
+                      type="radio"
+                      name="trip"
+                      id="Round trip"
+                      style="cursor: pointer"
+                    />
+                    <label for="Round trip" style="cursor: pointer"
+                      >Round trip</label
+                    >
+                  </div>
+                  <div style="cursor: pointer">
+                    <input
+                      type="radio"
+                      name="trip"
+                      id="One way"
+                      style="cursor: pointer"
+                    />
+                    <label for="One way" style="cursor: pointer">One way</label>
+                  </div>
+                  <div style="cursor: pointer">
+                    <input
+                      type="radio"
+                      name="trip"
+                      id="Istanbul"
+                      checked
+                      style="cursor: pointer"
+                    />
+                    <label for="Istanbul" style="cursor: pointer"
+                      >Stopover in Istanbul</label
+                    >
+                  </div>
+                  <div style="cursor: pointer">
+                    <input
+                      type="radio"
+                      name="trip"
+                      id="Multi-city"
+                      style="cursor: pointer"
+                    />
+                    <label for="Multi-city" style="cursor: pointer"
+                      >Multi-city</label
+                    >
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    gap: 0.125rem;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <img src="/icon/push.svg" />
+                  <b>Award ticket - Buy a ticket with Miles</b>
+                </div>
+              </div>
+              <div class="search-body-desc">
+                On your trip with Turkish Airlines, you can enjoy a
+                <a href="" style="color: var(--bg-red)">
+                  Stopover in Istanbul
+                </a>
+                and take advantage of free accommodation as well as an
+                opportunity to explore the city.
+              </div>
+              <div class="search-body-content">
+                <div class="search-body-content-row">
+                  <div style="display: flex; flex: 1">
+                    <div class="search-body-input-wrapper" style="flex: 1">
+                      <span>From</span>
+                      <input type="text" />
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 10px;
+                        z-index: 1;
+                        position: relative;
+                      "
+                    >
+                      <div
+                        style="
+                          position: absolute;
+                          background: #fff;
+                          border-radius: 100dvw;
+                          border: 1px solid #ccc;
+                          height: 30px;
+                          width: 30px;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        "
+                      >
+                        <img src="/icon/swap.svg" alt="swap" />
+                      </div>
+                    </div>
+                    <div class="search-body-input-wrapper" style="flex: 1">
+                      <span>To</span>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="search-body-input-wrapper">
+                    <span
+                      ><img src="/icon/calendar.svg" alt="swap" />Dates</span
+                    >
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="search-body-content-row">
+                  <div style="display: flex; flex: 1">
+                    <div class="search-body-input-wrapper" style="flex: 1">
+                      <span>From</span>
+                      <input type="text" />
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 10px;
+                        z-index: 1;
+                        position: relative;
+                      "
+                    >
+                      <div
+                        style="
+                          position: absolute;
+                          background: #fff;
+                          border-radius: 100dvw;
+                          border: 1px solid #ccc;
+                          height: 30px;
+                          width: 30px;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        "
+                      >
+                        <img src="/icon/swap.svg" alt="swap" />
+                      </div>
+                    </div>
+                    <div class="search-body-input-wrapper" style="flex: 1">
+                      <span>To</span>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="search-body-input-wrapper">
+                    <span
+                      ><img src="/icon/calendar.svg" alt="swap" /> Dates</span
+                    >
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="search-body-content-row">
+                  <div
+                    class="search-body-input-wrapper"
+                    style="gap: 0.125rem; flex: 1"
+                  >
+                    <div style="width: max-content">
+                      When would you like to take a break in Istanbul?
+                    </div>
+                    <div style="display: flex; gap: 1rem">
+                      <div
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <input type="radio" name="trip" id="Return" />
+                        <label for="Return"><b>Departure</b> </label>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <input type="radio" name="trip" id="Return" />
+                        <label for="Return"><b>Return</b></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="search-body-input-wrapper"
+                    style="gap: 0.125rem; flex: 1"
+                  >
+                    <div style="width: max-content">
+                      How many days would you like to stay in Istanbul?
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        gap: 0.75rem;
+                        background: #fff;
+                        width: max-content;
+                        align-items: center;
+                        padding: 0.5rem;
+                      "
+                    >
+                      <b
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          gap: 0.5rem;
+                          background: #fff;
+                          height: 20px;
+                          width: 20px;
+                          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        "
+                      >
+                        -
+                      </b>
+                      <b>1</b>
+                      <b
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          gap: 0.5rem;
+                          background: #fff;
+                          height: 20px;
+                          width: 20px;
+                          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        "
+                      >
+                        +
+                      </b>
+                    </div>
+                  </div>
+                  <div
+                    class="search-body-input-wrapper"
+                    style="gap: 0.125rem; flex: 1"
+                  >
+                    <div>Passengers</div>
+                    <div><b>1 Passenger</b></div>
+                    <div>ECO</div>
+                  </div>
+                  <div class="search-btn">
+                    Search flights
+                    <img
+                      src="/icon/arrow-2-white.svg"
+                      alt="arrow"
+                      height="20px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="schedule container">
@@ -121,10 +403,27 @@
               <img src="/icon/warning.svg" alt="warning" style="height: 1rem" />
               <div>
                 <div style="display: flex; justify-content: space-between">
-                  <b>Our new brand AJet started online ticket sales!</b>
-                  <div>1 / 2</div>
+                  <b id="announcement-title"
+                    >Our new brand AJet started online ticket sales!</b
+                  >
+                  <div
+                    style="
+                      display: flex;
+                      gap: 0.25rem;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div class="announcement-arrow">
+                      <img src="/icon/arrow-black.svg" />
+                    </div>
+                    <div style="width: max-content">1 / 2</div>
+                    <div class="announcement-arrow">
+                      <img src="/icon/arrow-black.svg" style="rotate: 180deg" />
+                    </div>
+                  </div>
                 </div>
-                <div>
+                <div id="announcement-desc">
                   AnadoluJet, which meets the air transportation needs of
                   Anatolia in an advantageous way, started ticket sales under
                   the name AJet as of March 12, 2024 via its official website
@@ -133,12 +432,33 @@
                 </div>
               </div>
             </div>
-            <div>dots</div>
+            <div style="display: flex; gap: 0.5rem">
+              <div
+                style="
+                  background: #ccc;
+                  height: 10px;
+                  width: 10px;
+                  border-radius: 100dvw;
+                "
+                class="announcement-dot"
+              ></div>
+              <div
+                style="
+                  background: #ccc;
+                  height: 10px;
+                  width: 10px;
+                  border-radius: 100dvw;
+                "
+                class="announcement-dot"
+              ></div>
+            </div>
           </div>
         </div>
         <div class="container explore-wrapper">
           <div class="explore-item">
-            <div class="explore-title">For advantageous refunds and fast payment: TK Wallet!</div>
+            <div class="explore-title">
+              For advantageous refunds and fast payment: TK Wallet!
+            </div>
             <div class="vertical-line"></div>
             <img src="/image/ticket.jpg" class="explore-item-img" />
             <div class="explore-txt">
@@ -149,11 +469,14 @@
               refunds to your digital wallet.
             </div>
             <div>
-            <div class="explore-btn">Discover</div>
+              <div class="explore-btn">Discover</div>
+            </div>
           </div>
           <div style="width: 1px; background: #ccc"></div>
           <div class="explore-item">
-            <div class="explore-title">For advantageous refunds and fast payment: TK Wallet!</div>
+            <div class="explore-title">
+              For advantageous refunds and fast payment: TK Wallet!
+            </div>
             <div class="vertical-line"></div>
             <img src="/image/touristanbul.webp" class="explore-item-img" />
             <div class="explore-txt">
@@ -166,105 +489,232 @@
             <div class="explore-btn">Discorver</div>
           </div>
         </div>
+        <div class="container deals-wrapper">
+          <div class="deals-offer">
+            See our best offers from
+            <span>Izmir<img src="/icon/arrow-red.svg" /></span>
+          </div>
+          <div class="deals-special">To the new cities with special deals!</div>
+          <div class="deals-more">
+            Show all campaigns
+            <img src="/icon//double-arrow.svg" style="height: 15px" />
+          </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="container sliderContent-wrapper">
+          <div>
+            <div class="sliderContent-arrow" style="rotate: 180deg">
+              <img src="/icon/arrow-2.svg" alt="arrow" />
+            </div>
+          </div>
+          <div class="sliderContent-container">
+            <div class="sliderContent-item">
+              <img
+                src="https://cdn.turkishairlines.com/m/3518ba9d84c5f9e6/original/270x150_ajet_en-01.webp"
+                class="sliderContent-item-img"
+              />
+              <div class="sliderContent-item-title">
+                Online ticket sales for our new brand, AJet, have begun!
+              </div>
+              <div class="sliderContent-item-desc">
+                AnadoluJet, that fulfills Anatolia's air transport needs, is now
+                operating domestic and international flights under the AJet
+                brand on ajet.com.
+              </div>
+              <div class="sliderContent-item-btn">
+                Discover AJet
+                <img src="/icon//double-arrow.svg" style="height: 15px" />
+              </div>
+            </div>
+            <div class="sliderContent-item">
+              <img
+                src="https://cdn.turkishairlines.com/m/309a7d4b6a68afa4/original/270x150-1.png"
+                class="sliderContent-item-img"
+              />
+              <div class="sliderContent-item-title">
+                Explore best flight deals on our most popular routes!
+              </div>
+              <div class="sliderContent-item-desc">
+                Book your flight now with advantageous fares.
+              </div>
+              <div class="sliderContent-item-btn">
+                Learn more
+                <img src="/icon//double-arrow.svg" style="height: 15px" />
+              </div>
+            </div>
+
+            <div class="sliderContent-item">
+              <img
+                src="https://cdn.turkishairlines.com/m/3c8b16b97a65aa52/original/melbourne_270x150jpg.jpg"
+                class="sliderContent-item-img"
+              />
+              <div class="sliderContent-item-title">
+                Travel to TRNC with your family at a 20% discount!
+              </div>
+              <div class="sliderContent-item-desc">
+                Our journey to Australia has begun. Book your flight now on our
+                website or app to explore this unique continent.
+              </div>
+              <div class="sliderContent-item-btn">
+                Discover
+                <img src="/icon//double-arrow.svg" style="height: 15px" />
+              </div>
+            </div>
+
+            <div class="sliderContent-item">
+              <img
+                src="https://cdn.turkishairlines.com/m/15f262c5cc07f35b/original/270x150-kibris-aile.jpeg"
+                class="sliderContent-item-img"
+              />
+              <div class="sliderContent-item-title">
+                Travel to TRNC with your family at a 20% discount!
+              </div>
+              <div class="sliderContent-item-desc">
+                You and your family can benefit from a 20% discount for flights
+                operating between TRNC and Istanbul and Antalya.
+              </div>
+              <div class="sliderContent-item-btn">
+                TRNC campaign
+                <img src="/icon//double-arrow.svg" style="height: 15px" />
+              </div>
+            </div>
+            <div class="sliderContent-item">
+              <img
+                src="https://cdn.turkishairlines.com/m/459524884fd19788/original/avis-270x150.webp"
+                class="sliderContent-item-img"
+              />
+              <div class="sliderContent-item-title">
+                Earn thousands of extra Miles by renting a car!
+              </div>
+              <div class="sliderContent-item-desc">
+                You can earn thousands of extra Miles and enjoy a 30% discount
+                by renting a vehicle with Avis or Budget through our online
+                channels.
+              </div>
+              <div class="sliderContent-item-btn">
+                Rent a car
+                <img src="/icon//double-arrow.svg" style="height: 15px" />
+              </div>
+            </div>
+            <div class="sliderContent-item">
+              <img
+                src="https://cdn.turkishairlines.com/m/37f0ee1ed2d8b074/original/mediablock-xcover.webp"
+                class="sliderContent-item-img"
+              />
+              <div class="sliderContent-item-title">
+                Feel safe at every moment of your trip!
+              </div>
+              <div class="sliderContent-item-desc">
+                With XCover Travel Insurance, you will always be prepared for
+                any unwanted surprises during your trip.
+              </div>
+              <div class="sliderContent-item-btn">
+                Travel insurance
+                <img src="/icon//double-arrow.svg" style="height: 15px" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="sliderContent-arrow">
+              <img src="/icon/arrow-2.svg" alt="arrow" />
+            </div>
+          </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="container reward-wrapper">
+          <div class="reward-item">
+            <img src="/image/world-class-airline.png" />
+            <div>WORLD CLASS AIRLINE</div>
+          </div>
+          <div class="reward-item">
+            <img src="/image/five-star-global-airline.png" />
+            <div>FIVE STAR GLOBAL AIRLINE</div>
+          </div>
+          <div class="reward-item">
+            <img src="/image/best-airline-in-europe.png" />
+            <div>BEST AIRLINE IN EUROPE</div>
+          </div>
+          <div class="reward-item">
+            <img src="/image/best-business-class.png" />
+            <div>BEST BUSINESS CLASS CATERING</div>
+          </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="container sponsorships">
+          <img src="/image/alliance.webp" alt="alliance" />
+          <img src="/image/champions.png" alt="champions" />
+          <img src="/image/euroleague.png" alt="euroleague" />
+        </div>
       </div>
-      <div class="container deals-wrapper">
-        <div class="deals-offer">
-          See our best offers from <span>Izmir</span>
+      <div class="footer-wrapper">
+        <div class="footer-socials">
+          <a href="" class="footer-socials-link">
+            <img src="/icon/facebook.svg" alt="facebook" />
+          </a>
+          <a href="" class="footer-socials-link">
+            <img src="/icon/twitter.svg" alt="twitter" />
+          </a>
+          <a href="" class="footer-socials-link">
+            <img src="/icon/instagram.svg" alt="instagram" />
+          </a>
+          <a href="" class="footer-socials-link">
+            <img src="/icon/youtube.svg" alt="youtube" />
+          </a>
+          <a href="" class="footer-socials-link">
+            <img src="/icon/linkedin.svg" alt="linkedin" />
+          </a>
+          <a href="" class="footer-socials-link">
+            <img src="/icon/tiktok.svg" alt="tiktok" />
+          </a>
+          <a href="" class="footer-socials-link">
+            <img src="/icon/tkblog.png" alt="tkblog" />
+          </a>
         </div>
-        <div class="deals-special">To the new cities with special deals!</div>
-        <div class="deals-more">Show all campaigns</div>
-      </div>
-      <div class="horizontal-line"></div>
-      <div class="container reward-wrapper">
-        <div class="reward-item">
-          <img src="/image/world-class-airline.png" />
-          <div>WORLD CLASS AIRLINE</div>
+        <div class="footer-navs">
+          <div class="footer-nav-link">
+            <div>PLAN &amp; BOOK</div>
+            <img src="/icon/arrow.svg" alt="" />
+          </div>
+          <div class="footer-nav-link">
+            <div>FLT DIFFRENT</div>
+            <img src="/icon/arrow.svg" alt="" />
+          </div>
+          <div class="footer-nav-link">
+            <div>Favorite Destinations</div>
+            <img src="/icon/arrow.svg" alt="" />
+          </div>
+          <div class="footer-nav-link">
+            <div>help</div>
+            <img src="/icon/arrow.svg" alt="" />
+          </div>
+          <div class="footer-nav-link">
+            <div>miles &amp; Smiles</div>
+            <img src="/icon/arrow.svg" alt="" />
+          </div>
+          <div class="footer-nav-link">
+            <div>Corporate club</div>
+            <img src="/icon/arrow.svg" alt="" />
+          </div>
+          <div class="footer-nav-link">
+            <div>turkish airlines</div>
+            <img src="/icon/arrow.svg" alt="" />
+          </div>
         </div>
-        <div class="reward-item">
-          <img src="/image/five-star-global-airline.png" />
-          <div>FIVE STAR GLOBAL AIRLINE</div>
+        <div class="footer-links">
+          <div class="footer-links-item">Accessibility</div>
+          <div class="footer-links-item">Privact &amp; Cookie Policy</div>
+          <div class="footer-links-item">Legal Notice</div>
+          <div class="footer-links-item">Passenger Rights</div>
+          <div class="footer-links-item">Change Cookie Settings</div>
+          <div class="footer-links-item">EU Data Subjescts Rights</div>
         </div>
-        <div class="reward-item">
-          <img src="/image/best-airline-in-europe.png" />
-          <div>BEST AIRLINE IN EUROPE</div>
+        <div class="footer-copyright">
+          Turkish Airlines Copyright © 1996-2024
         </div>
-        <div class="reward-item">
-          <img src="/image/best-business-class.png" />
-          <div>BEST BUSINESS CLASS CATERING</div>
-        </div>
-      </div>
-      <div class="horizontal-line"></div>
-      <div class="container sponsorships">
-        <img src="/image/alliance.webp" alt="alliance" />
-        <img src="/image/champions.png" alt="champions" />
-        <img src="/image/euroleague.png" alt="euroleague" />
-      </div>
-    </div>
-    <div class="footer-wrapper">
-      <div class="footer-socials">
-        <a href="" class="footer-socials-link">
-          <img src="/icon/facebook.svg" alt="facebook" />
-        </a>
-        <a href="" class="footer-socials-link">
-          <img src="/icon/twitter.svg" alt="twitter" />
-        </a>
-        <a href="" class="footer-socials-link">
-          <img src="/icon/instagram.svg" alt="instagram" />
-        </a>
-        <a href="" class="footer-socials-link">
-          <img src="/icon/youtube.svg" alt="youtube" />
-        </a>
-        <a href="" class="footer-socials-link">
-          <img src="/icon/linkedin.svg" alt="linkedin" />
-        </a>
-        <a href="" class="footer-socials-link">
-          <img src="/icon/tiktok.svg" alt="tiktok" />
-        </a>
-        <a href="" class="footer-socials-link">
-          <img src="/icon/tkblog.png" alt="tkblog" />
-        </a>
-      </div>
-      <div class="footer-navs">
-        <div class="footer-nav-link">
-          <div>PLAN &amp; BOOK</div>
-          <img src="/icon/arrow.svg" alt="" />
-        </div>
-        <div class="footer-nav-link">
-          <div>FLT DIFFRENT</div>
-          <img src="/icon/arrow.svg" alt="" />
-        </div>
-        <div class="footer-nav-link">
-          <div>Favorite Destinations</div>
-          <img src="/icon/arrow.svg" alt="" />
-        </div>
-        <div class="footer-nav-link">
-          <div>help</div>
-          <img src="/icon/arrow.svg" alt="" />
-        </div>
-        <div class="footer-nav-link">
-          <div>miles &amp; Smiles</div>
-          <img src="/icon/arrow.svg" alt="" />
-        </div>
-        <div class="footer-nav-link">
-          <div>Corporate club</div>
-          <img src="/icon/arrow.svg" alt="" />
-        </div>
-        <div class="footer-nav-link">
-          <div>turkish airlines</div>
-          <img src="/icon/arrow.svg" alt="" />
-        </div>
-      </div>
-      <div class="footer-links">
-        <div class="footer-links-item">Accessibility</div>
-        <div class="footer-links-item">Privact &amp; Cookie Policy</div>
-        <div class="footer-links-item">Legal Notice</div>
-        <div class="footer-links-item">Passenger Rights</div>
-        <div class="footer-links-item">Change Cookie Settings</div>
-        <div class="footer-links-item">EU Data Subjescts Rights</div>
-      </div>
-      <div class="footer-copyright">
-        Turkish Airlines Copyright © 1996-2024
       </div>
     </div>
   </body>
+  <script src="js/topbar.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/announcement.js"></script>
 </html>

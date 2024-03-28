@@ -30,4 +30,8 @@
   cursor: pointer;
   font-size: 0.875rem;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }

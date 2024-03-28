@@ -5,5 +5,20 @@
   align-items: center;
   padding: 1rem;
   border-radius: 5px;
-  border: 1px dashed #333;
+  border: 1px dashed #2e8ffd;
+  gap: 2rem;
+}
+
+#announcement-desc {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #212529;
+  margin-top: 1rem;
+}
+
+.announcement-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

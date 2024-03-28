@@ -2,6 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.topbar-container {
   position: relative;
 }
 
@@ -17,6 +20,7 @@
 .topbar-top-item {
   border-left: 1px dashed #ccc;
   padding: 0 0.75rem;
+  cursor: pointer;
 }
 
 .topbar-secondary {
@@ -45,6 +49,7 @@
 
 .topbar-logo-small {
   display: none;
+  cursor: pointer;
 }
 
 .topbar-nav {
@@ -63,6 +68,7 @@
   color: #fff;
   border-right: 1px dashed #ccc;
   height: max-content;
+  cursor: pointer;
 }
 
 .topbar-sign-btns {
@@ -76,6 +82,7 @@
   border-radius: 25px;
   font-size: 0.85rem;
   font-weight: 500;
+  cursor: pointer;
 }
 .topbar-sign-in {
   display: flex;
@@ -86,6 +93,7 @@
   border: 1px solid #fff;
   padding: 0.5rem 1.75rem;
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 .topbar-sign-in-txt {

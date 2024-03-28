@@ -40,3 +40,16 @@
 .schedule-item:hover span {
   color: #e81932;
 }
+
+@media only screen and (max-width: 768px) {
+  .schedule {
+    padding: 0;
+    margin: 0;
+    overflow: scroll hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+  .schedule-item {
+    scroll-snap-align: start;
+  }
+}
